@@ -1,0 +1,122 @@
+/* Forum App Styles */
+
+.App {
+  font-family: sans-serif;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.MainPage {
+  padding-left: 0px;
+  background-color: rgb(236, 233, 233);
+}
+
+.TopBar {
+  background-color: rgb(232, 177, 118);
+  padding-bottom: 1px;
+}
+
+.TopText {
+  font-size: 30px;
+  padding-left: 10px;
+  position: relative;
+  bottom: -10px;
+}
+
+.PostInput {
+  padding: 10px;
+}
+
+.PostInput button {
+  display: block;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #ecb76c;
+  color: black;
+  border: thin solid black;
+  cursor: pointer;
+}
+
+.PostInput button:hover {
+  background-color: #e8a03b;
+}
+
+.PostList {
+  padding-left: 30px;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.Link {
+  position: relative;
+  
+  color: black;
+  text-decoration: none;
+}
+
+.Link:hover {
+  color: #e8a03b;
+}
+
+.CommentNumber {
+  position: relative;
+  padding-left: 10px;
+  top: -10px;
+  font-size: 15px;
+  color: grey;
+}
+
+.PostPage {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background-color: rgb(236, 233, 233);
+}
+
+.PostText {
+  position: relative;
+  top: -15px;
+  font-size: 25px;
+  padding-right: 300px;
+}
+
+.EditPost {
+  padding-left: 10px;
+  padding-top: 20px;
+  background-color: rgb(236, 233, 233);
+}
+
+.EditPost button {
+  display: block;
+  padding: 4px 7px;
+  font-size: 14px;
+  background-color: #ecb76c;
+  color: black;
+  border: thin solid black;
+  cursor: pointer;
+}
+
+.CommentInput {
+  padding-left: 10px;
+  padding-top: 20px;
+  background-color: rgb(236, 233, 233);
+}
+
+.CommentInput button {
+  display: block;
+  position: relative;
+  top: 4px;
+  padding: 4px 5px;
+  font-size: 14px;
+  background-color: #ecb76c;
+  color: black;
+  border: thin solid black;
+  cursor: pointer;
+}
+
+.SecondLink {
+  position: relative;
+  color: black;
+  position: relative;
+  top: 10px;
+}

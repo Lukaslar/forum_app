@@ -1,0 +1,19 @@
+
+[
+    {
+      "id": "0",
+      "content": "Hello World, this is my first post",
+      "comments": ["Here is a comment", "Here is another comment"]
+    },
+    {
+      "id": "10",
+      "content": "Hello again World",
+      "comments": ["Interesting post", "Interesting comment"]
+    },
+    {
+      "id": "2",
+      "content": "Here is a much longer post so that it showcases that the whole content isn't displayed in the list view",
+      "comments": ["A comment", "Another comment", "Yet another comment"]
+    }
+
+  ]
