@@ -1,77 +1,36 @@
+Applikationen är skriven i react vilket därför behövs för att smidigt kunna köra applikationen,
+kan även hända att node.js behövs för installera vissa paket.
 
+För att starta applikationen:
+Hämta ner projektet från git
+Öppna mappen i en editor och gå till terminalen (se till att du är i rätt map)
+Kör kommandot 'npm install' för att lägga till delar som saknas
+Kör därefter kommandot 'npm start'
+Applicationen bör nu starta på localhost 3000.
+--
+9-10h lades ner på caset, ungefärlig fördelning:
+1-2h Planering av struktur och repetition
+7h utveckling av applikationens funktionalitet
+1h Design i css
+--
+Kort beskrivning:
 
+I applikationen kan användaren skriva en "post" som sedan publiceras i en lista med andra posts.
+Listan är sorterad efter posts id:n och blir därför kronologisk.
+Klickar användaren på en "post" tas den vidare till postens egna sida där man kan läsa och uppdatera postens text.
+På samma sida kan man också ta dela av och lägga till kommentarer.
+Datan i applikationen behålls även om sidan uppdateras eller applikationen startas om,
+detta eftersom det lagras i ett lokalt minne hos browsern(i ett JSON format).
+Användaren har också möjlighet att "återställa" applikationen och ta bort alla trådar
 
+Struktur: 
+Det mesta av betydelse finns i mappen 'src'
+App.js routar till de sidor som användaren kan tänkas gå mellan, det är listan med posts, en posts egna sida 
+och en sida med 404 error. Sidorna finns i "pages", de har egna funktioner men använder sig också av komponenterna
+som finns i filen "components". Tillsist finns även en App.css i "styles" mappen som ger viss design åt sidan. 
 
-
-
-
-
-
-
-
-
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Övrigt:
+Beslutet att inte koppla applikationen till en server togs för att utvecklingen skulle gå så
+snabbt som möjligt i och med tidsbegränsningen. Skulle applikationen utvecklas vidare borde datalagringen och vissa funktioner flyttas ner till
+en server kopplad till en JSON fil där datan hämtas och skrivs, en mall för en JSON fil finns redan i projektet. Om ni vill se prov på mer serverhantering så bygger
+jag i så fall gärna vidare på detta. 
