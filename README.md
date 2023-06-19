@@ -2,10 +2,10 @@ Applikationen är skriven i react vilket därför behövs för att smidigt kunna
 kan även hända att node.js behövs för installera vissa paket.
 
 För att starta applikationen:
-Hämta ner projektet från git
-Öppna mappen i en editor och gå till terminalen (se till att du är i rätt mapp/directory)
-Kör kommandot 'npm install' för att lägga till delar som saknas
-Kör därefter kommandot 'npm start'
+Hämta ner projektet från git, 
+Öppna mappen i en editor och gå till terminalen (se till att du är i rätt mapp/directory),
+Kör kommandot 'npm install' för att lägga till delar som saknas,
+Kör därefter kommandot 'npm start',
 Applicationen bör nu starta på localhost 3000.
 --
 9-10h lades ner på caset, ungefärlig fördelning:
