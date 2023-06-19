@@ -3,7 +3,7 @@ kan även hända att node.js behövs för installera vissa paket.
 
 För att starta applikationen:
 Hämta ner projektet från git
-Öppna mappen i en editor och gå till terminalen (se till att du är i rätt map)
+Öppna mappen i en editor och gå till terminalen (se till att du är i rätt mapp/directory)
 Kör kommandot 'npm install' för att lägga till delar som saknas
 Kör därefter kommandot 'npm start'
 Applicationen bör nu starta på localhost 3000.
@@ -25,12 +25,12 @@ Användaren har också möjlighet att "återställa" applikationen och ta bort a
 
 Struktur: 
 Det mesta av betydelse finns i mappen 'src'
-App.js routar till de sidor som användaren kan tänkas gå mellan, det är listan med posts, en posts egna sida 
+App.js routar till de sidor som användaren kan tänkas gå mellan, det är sidan med listade posts, en posts egna sida 
 och en sida med 404 error. Sidorna finns i "pages", de har egna funktioner men använder sig också av komponenterna
-som finns i filen "components". Tillsist finns även en App.css i "styles" mappen som ger viss design åt sidan. 
+som finns i filen "components". Tillsist finns även en App.css i "styles" mappen som ger viss design åt applikationen. 
 
 Övrigt:
 Beslutet att inte koppla applikationen till en server togs för att utvecklingen skulle gå så
-snabbt som möjligt i och med tidsbegränsningen. Skulle applikationen utvecklas vidare borde datalagringen och vissa funktioner flyttas ner till
-en server kopplad till en JSON fil där datan hämtas och skrivs, en mall för en JSON fil finns redan i projektet. Om ni vill se prov på mer serverhantering så bygger
-jag i så fall gärna vidare på detta. 
+snabbt som möjligt i och med tidsbegränsningen. Skulle applikationen utvecklas vidare borde datalagringen och vissa
+funktioner rimligtvis flyttas ner till en server kopplad till en JSON fil där datan hämtas och skrivs, en mall för en JSON fil finns redan i projektet.
+Om ni vill se prov på mer serverhantering så bygger jag i så fall gärna vidare på det. 
